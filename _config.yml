@@ -45,5 +45,4 @@ defaults:
       type: post
     values:
       tags: Other
-    
-baseurl: "/saranobrega.github.io" 
+  
