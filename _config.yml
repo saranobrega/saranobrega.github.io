@@ -1,6 +1,6 @@
 title: "Sara's Data Science Blog"
 author: "Sara Nóbrega"
-#baseurl: "/saranobrega.github.io" # Replace with your actual repository name
+# Replace with your actual repository name
 
 #description: "Some short description of your blog can go here." # This will show up in places like twitter, linkedin, etc, if you share your sites url as a post.
 
@@ -45,3 +45,5 @@ defaults:
       type: post
     values:
       tags: Other
+    
+baseurl: "/saranobrega.github.io" 
