@@ -92,6 +92,7 @@ There are two main metrics in these SDMetrics:
 <br><br>
 LSTM metrics:
 <br><br>
+
 | Turbine | WS   | AP+WS |
 | ------- | ---- | ----- |
 | 1       | 0.32 |0.32 |
@@ -107,6 +108,7 @@ LSTM metrics:
 <br><br>
 SDMetrics (Overall score, considering Column Shapes and Column Pair Trends metrics):
 <br><br>
+
 | Turbine | WS   | AP+WS |
 | ------- | ---- | ----- |
 | 1       | **81%** | 78%  |
