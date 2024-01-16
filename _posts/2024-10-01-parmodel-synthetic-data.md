@@ -39,4 +39,112 @@ Multi-type and multivariate time-series data means that the model is also design
 Subsequently, it enables the generation of new synthetic data that faithfully replicates the format and properties of the initially learned dataset. 🔄
 
 
+###  Data Preparation
 
+As in any synthetic generation task and most machine learning assignments, the foundation for success lies in the quality of the training dataset.
+
+A diverse and representative dataset acts as the guiding force, helping the model discern and capture intricate patterns and nuances embedded in the original data. This is crucial to ensure that the synthetic data reflects the complexity of real-world scenarios.
+
+Inaccuracies or biases present in the training data can impact the generative process, leaving imprints on the synthetic data. Thus, preprocessing of the training dataset should be the first concern in this type of task.  
+
+👉 Making sure the data is representative, mitigating bias, ensuring proper alignment of timestamps in the data, outlier removal and dealing with NaN were the main pre-processing tasks employed here before generating synthetic data.
+
+Note: This model requires all rows to be non-null (NaN). So make sure you do the necessary data pre-processing so you do not have any NaN values. 
+
+Here is an example of a scatter plot of some wind speed data over time:
+
+<div><img src="/images/WS.png" alt="Plot of WindSpeed over time"></div> 
+
+### Generating Synthetic Data
+
+The implementation of ParModel is very simple and straight-forward. 
+
+Here is a snapshot:
+
+<div><img src="/images/impl.png" alt=""></div> 
+
+The entity columns are like labels that tell us which rows belong to the same group or entity. In this case, each row with the same “WT” would represent data for a specific wind turbine.
+
+The **`data_types`** parameters is employed to specify the types of data for the different columns in the data. It helps the model to understand the nature of the data in each column.
+
+In my case, data types are WindSpeed and ActivePower (I also generated synthetic data using WindSpeed only).
+
+The **`sequence_index`** parameter in the code is used to specify the column  that represents the sequence index or timestamp.
+
+I generated WindSpeed synthetic data both considering only WindSpeed column and WindSpeed+ActivePower column. My goal was to check if adding the ActivePower column would improve the results!
+
+### Evaluation Metrics
+
+For this project I used Synthetic Data Metrics (SDMetrics),  an [open source](https://github.com/sdv-dev/SDMetrics) Python library for evaluating tabular synthetic data. With this library anyone is was able to compare synthetic data against real data using a variety metrics, generate visual reports and share them. 
+
+There are two main metrics in these SDMetrics:
+
+- **Column Pair Trends:** This metric focuses on evaluating the matching trends between pairs of real and synthetic data columns. For each pair, the correlation is calculated, and the final score represents the average of these correlation measures across all column pairs. The metric utilizes two similarity metrics: CorrelationSimilarity for continuous columns and ContingencySimilarity for discrete columns.
+
+- **Column Shapes:** This metric assesses the shape similarity between real and synthetic data columns. It computes a metric score column-wise, and the final score is the average over all columns. The KSComplement metric is used for numerical and datetime columns, measuring the Kolmogorov-Smirnov distance. For categorical and boolean columns, the TVComplement metric is employed, assessing the total variation distance. The metric provides insights into how well the synthetic data replicates the shapes of the original data columns across various types.
+
+- **LSTM score:**  LSTMDetection calculates how difficult it is to tell apart the real, sequential data from the synthetic data and it is done using a neural network. The scores obtained from these metrics are normalized within the range [0, 1]. The better the model can distinguish between real and synthetic sequences, or the higher its accuracy when fitted on synthetic data compared to real data, the higher the resulting metric score. Therefore, a **higher score** implies a higher level of similarity and quality in the synthetic time series data.
+
+
+### Comparative Analysis
+
+#### Metrics
+<br><br>
+LSTM metrics:
+<br><br>
+| Turbine | WS   | AP+WS |
+| ------- | ---- | ----- |
+| 1       | 0.32 |0.32 |
+| 2      | 0.35 | **0.36**  |
+| 3      | **0.34** | 0.30  |
+| 4      | 0.34 | 0.34  |
+| 5      | 0.34 | **0.36**  |
+| 6      | 0.35 | **0.39**  |
+| 7      | **0.37** | 0.35  |
+| 8      | **0.35** | 0.35  |
+| 9       | 0.35 | **0.38** |
+
+<br><br>
+SDMetrics (Overall score, considering Column Shapes and Column Pair Trends metrics):
+<br><br>
+| Turbine | WS   | AP+WS |
+| ------- | ---- | ----- |
+| 1       | **81%** | 78%  |
+| 2      | 80% | **83%**  |
+| 3      | **85%** | 82%  |
+| 4      | **85%** | 78%  |
+| 5      | 80% | **85%**  |
+| 6      | 78% | **81%**  |
+| 7      | 80% | **85%**  |
+| 8      | **84%** | 84%  |
+| 9       | 82%| **83%**  |
+
+
+
+#### Plots
+
+I generated synthetic data by providing the model datasets comprising 500, 1000, 2000, and 10000 samples. 
+<br><br>
+👉Some results concerning 500 samples:
+<br><br>
+<div><img src="/images/500_1.png" alt=""></div> 
+<br><br>
+👉Some results concerning 1000 samples:
+<br><br>
+<div><img src="/images/1000_1.png" alt=""></div> 
+<br><br>
+👉2000 samples:
+<br><br>
+<div><img src="/images/2000.png" alt=""></div> 
+<br><br>
+👉 And finally, 10k samples:
+<br><br>
+Here, I showcase both synthetic datasets, one employing only WindSpeed as a data type and the other including ActivePower: 
+<br><br>
+<div><img src="/images/ws_only.png" alt=""></div> 
+<br><br>
+<div><img src="/images/ws_ap.png" alt=""></div> 
+<br><br>
+And a plot with both synthetic dataframes:
+<br><br>
+<div><img src="/images/both.png" alt=""></div> 
