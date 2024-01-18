@@ -167,6 +167,6 @@ With its probabilistic autoregressive approach, ParModel proves to be a robust s
 
 ### References
 
-[1](https://sdv.dev/SDV/user_guides/timeseries/par.html)
+[SDV](https://sdv.dev/SDV/user_guides/timeseries/par.html)
 
-[2](https://docs.sdv.dev/sdmetrics/)
+[ParModel](https://docs.sdv.dev/sdmetrics/)
