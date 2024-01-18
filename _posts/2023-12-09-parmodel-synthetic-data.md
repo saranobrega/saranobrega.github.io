@@ -89,8 +89,8 @@ There are two main metrics in these SDMetrics:
 ### Comparative Analysis
 
 #### Metrics
-<br><br>
-LSTM metrics:
+
+**LSTM metrics:**
 <br><br>
 
 | Turbine | WS   | AP+WS |
@@ -106,7 +106,9 @@ LSTM metrics:
 | 9       | 0.35 | **0.38** |
 
 <br><br>
-SDMetrics (Overall score, considering Column Shapes and Column Pair Trends metrics):
+**SDMetrics:**
+
+Here I present the overall score which considers both Column Shapes and Column Pair Trends metrics:
 <br><br>
 
 | Turbine | WS   | AP+WS |
@@ -150,9 +152,6 @@ Here, I showcase both synthetic datasets, one employing only WindSpeed as a data
 And a plot with both synthetic dataframes:
 <br><br>
 <div><img src="/images/both.png" alt=""></div> 
-
-
-### Choosing the Right Synthetic Data
 
 ### Applications
 
