@@ -47,8 +47,9 @@ Despite the EU's efforts, its Total Factor Productivity (TFP) lags behind the US
 The nine initial Common European data spaces include areas such as industry, the Green Deal, mobility, health, energy, agriculture, public administrations, and skills.
 
 The rules for these data spaces will cover various sectors such as health, mobility, environment, energy, and agriculture, aiming to make better use of publicly held data.
-
-
+<br>
+<div><img src="/images/sector.png" alt=""></div> 
+<br>
 The technological side of data spaces involves the development of secure and privacy-preserving infrastructures to pool, access, share, process, and use data, as well as ensuring interconnection and interoperability among different data spaces.
 
 The Data Spaces Support Centre, funded by the European Commission, is actively involved in supporting the development of data spaces across various sectors and industries
