@@ -5,7 +5,7 @@
 
 ### What are the current challenges related to Data?
 
-In the complex world of data management, organizations suffer with various challenges that can impede the efficient utilization of valuable information. From the issues of data silos hindering collaboration to the complex and burocratic aspects of maintaining data privacy and quality, these obstacles demand new solutions.
+In the complex world of data management, organizations suffer with various challenges related to data availability. This ultimately makes businesses loose valuable information and miss key development opportunities. From the issues of data silos being an obstacle to collaboratio, to the complex and burocratic aspects of maintaining data privacy and quality, these obstacles demand new solutions.
 
 Enter Data Spaces –  ecosystems that are here to revolutionize data management and analysis. These spaces act as collaborative hubs, breaking down silos and providing a unified platform for efficient collaboration.  With a commitment to privacy compliance, data spaces offer a secure framework for navigating the balance between data accessibility and privacy.
 
@@ -17,7 +17,11 @@ The European Union (EU) is working towards fostering a dynamic data economy thro
 
 The primary goal of Data Spaces is to enhance the availability and secure exchange of data in a trustworthy and beneficial way for both citizens and businesses. These data spaces are created with the intention of making more data accessible for use in various aspects of the economy and society, all while ensuring that the entities and individuals generating the data retain control over it. 
 
+You can think of a Data Space as an intermediary between data providers and people/organizations/institutions that are willing to use this data. Although the concept itself is simple to grasp, its construction and implementation are no easy tasks!
+
 I am currently working on two European-funded projects related to Data Spaces. One is [OMEGA-X](https://omega-x.eu/), that aims to implement an energy data space that focus on 4 energy sectors: renewable, local energy communities, flexibility and electromobility. I am working on the flexibility use-case, which exploits data from different energy vectors to optimize the overall performance of a local community, instead of optimizing each vector individually.
+
+We work closely with [IDSA](https://internationaldataspaces.org/), the International Data Space Association. 
 
 I am also working in the EU-funded [Green.Dat.AI](https://greendatai.eu/) project, which leverages AI in a way that helps the European Green Deal goals, by creating new energy-efficient data analytics services. These services will be easy to use in industrial AI systems, all while making sure we lessen the impact on the environment during data management. Our use-case is related to data sharing across the renewable energy sector, more specifically in accurate forecasting of energy-production for wind-farm owners.
 
@@ -115,6 +119,7 @@ The benefits of Data Spaces are endless. They extend to both businesses and citi
 
 Thank you for reading!
 
+PS: If you are interested in knowing more about Data Spaces, IDSA provides a training program, available [here](https://internationaldataspaces.org/how-to-build-data-spaces-our-training-program/).
 
 
 
