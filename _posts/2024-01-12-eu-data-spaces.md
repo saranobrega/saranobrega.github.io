@@ -3,7 +3,7 @@
 <div><img src="/images/EU.png" alt=""></div> 
 <br>
 
-### What are the current challenges related to data ?
+### What are the current challenges related to data?
 
 The world of data and data management has quickly become a very complex topic. Organizations and companies struggle with several challenges related to the availability, quality and privacy of data. This makes businesses loose valuable information and miss key development opportunities. From the issues of data silos being an obstacle to collaboration, to the complex and burocratic aspects of maintaining data privacy and quality, new solutions are arising.
 
