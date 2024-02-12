@@ -28,7 +28,7 @@ I am also working in the EU-funded [Green.Dat.AI](https://greendatai.eu/) projec
 <br>
 
 <div><img src="/images/eu_data.png" alt=""></div> 
-
+Source: European Commission. 
 <br>
 
 
@@ -50,6 +50,7 @@ The EU's focus on regulatory measures, while promoting data privacy, has inadver
 
 <br>
 <div><img src="/images/graph.png" alt=""></div> 
+Source: OECD
 <br>
 
 The European Commission's 2020 data strategy centers around establishing common European Data Spaces in strategic sectors like health, mobility, environment, energy, and agriculture. This aims to optimize the use of publicly held data and enhance Europe's position in the global data economy, fostering competition with the US.
