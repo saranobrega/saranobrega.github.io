@@ -3,11 +3,11 @@
 <div><img src="/images/EU.png" alt=""></div> 
 <br>
 
-### What are the current challenges related to data availability?
+### What are the current challenges related to data ?
 
-In the complex world of data management, organizations suffer with various challenges related to data availability. This ultimately makes businesses loose valuable information and miss key development opportunities. From the issues of data silos being an obstacle to collaboratio, to the complex and burocratic aspects of maintaining data privacy and quality, these obstacles demand new solutions.
+The world of data and data management has quickly become a very complex topic. Organizations and companies struggle with several challenges related to the availability, quality and privacy of data. This makes businesses loose valuable information and miss key development opportunities. From the issues of data silos being an obstacle to collaboration, to the complex and burocratic aspects of maintaining data privacy and quality, new solutions are arising.
 
-Data Spaces are a revolutionary tool to solve these issues. They are ecosystems that are here to transform data management and analysis. These data spaces act as collaborative hubs, breaking down silos and providing a unified platform for efficient collaboration.  With a commitment to privacy compliance, data spaces offer a secure framework for navigating the balance between data accessibility and privacy.
+Data Spaces are a revolutionary tool to solve these issues. They are ecosystems that are here to transform data management and analysis. These data spaces act as collaborative hubs, providing a unified platform for efficient collaboration.  With a commitment to privacy compliance, data spaces offer a secure framework for navigating the balance between data accessibility and privacy.
 
 
 ### What are Data Spaces?
