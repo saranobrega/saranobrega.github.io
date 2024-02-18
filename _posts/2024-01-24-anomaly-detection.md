@@ -16,7 +16,7 @@ The goal is to test and compare 2 different methods of detecting anomalies. The 
 As mentioned, the two methods differ in the input data:
 
 - The usual method: using image (pixel) data (MNIST images) as input data. I will refer to this data here as “normal data”.
-- New method: using the model state of the MNIST 10-digit classifier model as data. What does this mean ? I first trained a ANN with MNIST pixel data both with normal and noisy data (the anomalies). Then, I access the state of the neurons of this ANN on the first and second layer of the model. I use this data,  the state of the neurons of both layers, as the input of Isolation Forest and another ANN. We named this data “model-state data”.
+- New method: using the model state of the MNIST 10-digit classifier model as data. What does this mean? I first trained a ANN with MNIST pixel data both with normal and noisy data (the anomalies). Then, I access the state of the neurons of this ANN on the first and second layer of the model. I use this data,  the state of the neurons of both layers, as the input of Isolation Forest and another ANN. We named this data “model-state data”.
 
 The goal here is to see which kind of anomalies each method can detect, if one method can detect certain kind of anomalies that the other is not able to detect. Besides, regarding the second method, the goal is also to study which layer data is the best to predict anomalies.
 
