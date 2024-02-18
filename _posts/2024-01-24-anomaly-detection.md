@@ -20,9 +20,13 @@ As mentioned, the two methods differ in the input data:
 
 The aim is to identify which kind of anomalies each method can detect and if one method can detect certain kind of anomalies that the other is not able to detect. Besides, regarding the second method, the goal is also to study which layer data is the best to predict anomalies.
 
+First, I trained a simple ANN with MNIST pixel data (with normal and noisy data:
+<br><br>
 <div><img src="/images/1.png" alt="Fig1: First, I trained a simple ANN with MNIST pixel data (with normal and noisy data)."></div> 
 <br><br>
 
+Im the image below we can see the input data. On the left, MNIST pixel data (normal data), and on the right, State of the neurons after training an ANN with MNIST pixel data (model-state data).
+<br><br>
 <div><img src="/images/2.png" alt="Fig2: Input data. On the left: MNIST pixel data (normal data). On the right: State of the neurons after training an ANN with MNIST pixel data (model-state data)."></div> 
 <br><br>
 
