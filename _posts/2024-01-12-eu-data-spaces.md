@@ -1,4 +1,7 @@
 ## How are Data Spaces (already) shaping EU's data economy?
+
+### A very short introduction on Data Spaces
+
 <br>
 <div><img src="/images/EU.png" alt=""></div> 
 <br>
