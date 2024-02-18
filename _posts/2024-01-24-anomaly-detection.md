@@ -30,7 +30,7 @@ Im the image below we can see the input data. On the left, MNIST pixel data (nor
 <div><img src="/images/2.png" alt="Fig2: Input data. On the left: MNIST pixel data (normal data). On the right: State of the neurons after training an ANN with MNIST pixel data (model-state data)."></div> 
 <br><br>
 
-## The models
+### The models
 
 As mentioned, the goal was to compare the anomaly detection task using two different input data with two different models. The models are a simple ANN and the Isolation Forest.
 
@@ -38,7 +38,7 @@ As mentioned, the goal was to compare the anomaly detection task using two diffe
 <div><img src="/images/3.png" alt="Fig3: The models: ANN and Isolation Forest."></div> 
 <br><br>
 
-## Types of Anomalies
+### Types of Anomalies
 
 To test this new method, my supervisor suggested to generate different kinds of anomalous data. The goal is to assess which types of anomalies both methods would/would not detect. We can see in the image below that from the first to the fourth kind of noise, the noise rate increases.
 
