@@ -3,8 +3,8 @@
 
 This was a project my supervisor during my the internship in the Netherlands proposed to me, in the beginning of 2022. It was my first internship, right after graduation, and it allowed me to gain confidence on my skills as well as to develop them. 
 
-This was one of my favorite projects I have performed, I genuinely had fun and I was extremely curious to know the results. 
-Although it is not the most complete project I have performed in terms of end-to-end development (I only did the part of experimentation), I think that conceptually, the project is very interesting and somehow not so straightforward to understand.
+This is one of my favorite projects I have performed, I genuinely had fun and I was extremely curious to know the results. 
+Although by far it is not the most complete project I have performed in terms of end-to-end development (I only did the part of experimentation), I think that conceptually, the project is very interesting and somehow not so straightforward to understand.
 Basically, my task was to test a new method to detect anomalies in image data.
 
 ### Motivation and Method
