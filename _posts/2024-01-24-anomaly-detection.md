@@ -1,22 +1,26 @@
 ## An Exploration of Model-State Data in Anomaly Detection
 
 
-This was a project my supervisor during my the internship in the Netherlands proposed to me, in the beginning of 2022. It was my first internship, right after graduation, and it allowed me to gain confidence on my skills as well as to develop them. 
+Is there a way to predict anomalies in image data that is different from the usual methods? Can the information about the state of the neurons be enough for a model to detect anomalies in image data? Let's find out!
 
-This is one of my favorite projects I have performed, I genuinely had fun and I was extremely curious to know the results. 
-Although by far it is not the most complete project I have performed in terms of end-to-end development (I only did the part of experimentation), I think that conceptually, the project is very interesting and somehow not so straightforward to understand.
-Basically, my task was to test a new method to detect anomalies in image data.
+This was a project I performed during my the internship in the Netherlands, in the beginning of 2022. It was my first internship, right after graduation, and it allowed me to gain confidence on my skills in machine learning as well as to develop them. 
+
+This is one of my favorite projects I have performed I genuinely had fun and I was extremely curious to discover the outcomes of this new method that was still just an idea before the implementation. 
+
+Although by far it is not the most complete project I have performed in terms of end-to-end development (I only did the part of experimentation), I find the project conceptually very interesting yet not immediately straightforward to grasp the underlying idea.
+
+In a nutshell, my task was to test a new method to detect anomalies in image data. This new method employs information about the state of the neurons of a previously trained ANN. 
 
 ### Motivation and Method
 
-The goal is to test and compare 2 different methods of detecting anomalies. The methods only differ in the input data that is given to the models! In this project, two different models were tested: a simple ANN (supervised) and the Isolation Forest model (unsupervised). 
+The goal is to test and compare 2 different methods of detecting anomalies in image data. The methods only differ in the input data that is given to the models! In this project, two different models were tested: a simple ANN (supervised task) and the Isolation Forest model (unsupervised task). 
 
 ### The data
 
-As mentioned, the two methods differ in the input data:
+As mentioned, the two methods differ in their input data:
 
-- The usual method: using image (pixel) data as input data. More especifically, I used MNIST image data. I will refer to this data here as “normal data”.
-- New method: using the model state of the MNIST 10-digit classifier model as data. What does this mean? I first trained a ANN with MNIST pixel data both with normal and noisy data (the anomalies). Then, I access the state of the neurons of this ANN on the first and second layer of the model. I use this data,  the state of the neurons of both layers, as the input of Isolation Forest and another ANN. We named this data “model-state data”.
+- The usual/conventional method: using image (pixel) data as input data. More specifically, I used MNIST image data. I will refer to this data here as “normal data”.
+- New method: using the model-state of the MNIST 10-digit classifier model as input data. What does this mean? To start, I first trained a ANN with MNIST pixel data both with normal and noisy data (here, representing the anomalies). Then, I access the state of the neurons of this ANN on the first and second layer of the model. Then, I use this data,  the state of the neurons of both layers, as the input data of an Isolation Forest model and as an input of another ANN. We named this data “model-state data”.
 
 The aim is to identify which kind of anomalies each method can detect and if one method can detect certain kind of anomalies that the other is not able to detect. Besides, regarding the second method, the goal is also to study which layer data is the best to predict anomalies.
 
