@@ -1,7 +1,9 @@
 ## An Exploration of Model-State Data in Anomaly Detection
 
 
-Is there an alternative approach to predicting anomalies in image data compared to the usual methods? Can the information about the state of the neurons be enough for a model to detect anomalies in image data? Let's find out!
+Is there an alternative approach to predicting anomalies in image data compared to the usual methods? Can the information about the state of the neurons be enough for a model to detect anomalies in image data?
+<br><br>
+Let's find out!
 
 This was a project I performed during my the internship in the Netherlands, in the beginning of 2022. It was my first internship, right after graduation, and it allowed me to gain confidence on my skills in machine learning as well as to develop them. 
 
@@ -13,7 +15,7 @@ In a nutshell, my task was to test a new method to detect anomalies in image dat
 
 ### Motivation and Method
 
-The goal is to test and compare 2 different methods of detecting anomalies in image data. The methods only differ in the input data that is given to the models! In this project, two different models were tested: a simple ANN (supervised task) and the Isolation Forest model (unsupervised task). 
+The goal is to test and compare two different methods of detecting anomalies in image data. The methods only differ in the input data that is given to the models! In this project, two different models were tested: a simple ANN (supervised task) and the Isolation Forest model (unsupervised task). 
 
 ### The data
 
