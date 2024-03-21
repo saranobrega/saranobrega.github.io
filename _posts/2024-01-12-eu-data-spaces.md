@@ -2,7 +2,6 @@
 
 ### A very short introduction on Data Spaces
 
-<br>
 <div><img src="/images/EU.png" alt=""></div> 
 <br>
 
@@ -78,7 +77,7 @@ The Data Spaces Support Centre, funded by the European Commission, is actively i
 
 ### What are the benefits of Data Spaces for businesses and citizens in the EU?
 
-There are so many benefits of European Data Spaces npt only for businesses but also for citizens in the EU. After all, these data spaces aim to ensure that more data becomes available for use in the economy, society, and research, while keeping the companies and individuals who generate the data in control. Can you imagine what possibilities this new paradigm will bring? Here are some:
+There are so many benefits of European Data Spaces not only for businesses but also for citizens in the EU. After all, these data spaces aim to ensure that more data becomes available for use in the economy, society, and research, while keeping the companies and individuals who generate the data in control. Can you imagine what possibilities this new paradigm will bring? Here are some:
 
 
 - **Business Opportunities:** Data Spaces create new business opportunities by enabling the tapping into personal data, which benefits private citizens by offering alternative product sales and choices, such as in banking and insurance services;
@@ -92,7 +91,7 @@ There are so many benefits of European Data Spaces npt only for businesses but a
 - **Control Over Data:** Businesses, public administrations, and individuals will have control over the data they generate, while benefiting from a safe and reliable framework to share their data for various purposes.
 
 
-### What are some best practices for implementingData Spaces initiatives in the EU?
+### What are some best practices for implementing Data Spaces initiatives in the EU?
 
 
 The implementation of Data Space initiatives in the EU can benefit from the following best practices:
