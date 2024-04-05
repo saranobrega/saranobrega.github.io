@@ -126,7 +126,7 @@ The results from the first and second layer are shown in separated images:
 
 **ANN**
 
-In conclusion, the results obtained from comparing the anomaly detection performance of an Artificial Neural Network (ANN) and an Isolation Forest model using two different input data types provide valuable insights. The ANN, when trained with model-state data representing the state of neurons, showed improved performance in detecting anomalies compared to the traditional method using pixel data. Besides, the model-state data from the second layer of neurons showed promising results in identifying certain types of anomalies with a low false positive rate.
+In conclusion, the results obtained from comparing the anomaly detection performance of an Artificial Neural Network (ANN) and an Isolation Forest model using two different input data types provide valuable insights. The ANN, when trained with model-state data representing the state of neurons, showed improved performance in detecting anomalies compared to the traditional method using pixel data. Besides, the model-state data from the first layer of neurons showed promising results in identifying certain types of anomalies with a low false positive rate.
 
 A potential possibility for future exploration could be combining both methods within the ANN framework — utilizing normal data to capture certain anomalies and model-state data to detect others. Further experiments with diverse datasets and anomaly types would be needed to validate this hybrid approach. 
 
